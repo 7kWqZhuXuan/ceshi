@@ -1,0 +1,324 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+}
+#about {
+    border-radius: 15px;
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#about h2 {
+    color: #444;
+}
+
+#about p {
+    color: #666;
+}
+.output{
+    background-color:#f6f6f6;
+    display: block;
+    unicode-bidi: isolate;
+}
+#ball {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(43, 195, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#sponsorBtn {
+    padding: 10px 20px;
+    background-color: #007bff; /* 深蓝色 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#sponsorBtn:hover {
+    background-color: #0056b3; /* 更深的蓝色 */
+}
+#sponsorBtn {
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+#sponsorBtn:hover {
+    background-color: #0056b3; /* ... 省略其他CSS样式 ... */
+    transform: scale(1.1); /* 鼠标悬停时放大按钮 */
+}
+
+
+#ad_p{
+    width: 0.5px;
+}
+#comments {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px; /* 底部边距 */
+}
+
+#comments h2 {
+    margin-bottom: 10px;
+}
+
+#nickname {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#comment {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical; /* 使文本域可以调整高度 */
+}
+
+#submitComment {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#commentsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#commentsList li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#commentsList li:last-child {
+    border-bottom: none;
+}
+
+/* 更新日志样式 */
+#updateList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#updateList li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#updateList li:last-child {
+    border-bottom: none;
+}
+#updateTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#updateTable th, #updateTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#updateTable th {
+    background-color: #f0f0f0;
+}
+
+#updateTable tbody tr:nth-child( even) {
+    background-color: #f9f9f9;
+}
+
+#updateTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+#historyTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#historyTable th, #historyTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#historyTable th {
+    background-color: #f0f0f0;
+}
+
+#historyTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#historyTable tbody tr:hover {
+    background-color: #f5f5f5;
+}
+.footer a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* 链接背景色 */
+    color: white; /* 链接文字颜色 */
+    border: none;
+    border-radius: 4px; /* 链接边框圆角 */
+    margin-left: 10px; /* 确保链接之间有足够的间隔 */
+    cursor: pointer; /* 链接鼠标指针样式 */
+    text-decoration: none; /* 移除链接下划线 */
+}
+
+.footer a:hover {
+    background-color: #0056b3; /* 鼠标悬停时链接背景色变化 */
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* 默认不显示 */
+}
+
+.popup button {
+    padding:10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+#advertisement1 {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 300px; /* 广告栏宽度 */
+    background-color: #fff; /* 广告栏背景色 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 广告栏阴影 */
+    padding: 20px; /* 广告栏内边距 */
+    border-radius: 8px; /* 广告栏圆角 */
+}
+
+#advertisement1 img {
+    width: 100%; /* 广告图片宽度 */
+    height: auto; /* 保持图片高度自动 */
+}
+.advertisement {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 150px; /* 广告栏宽度 */
+    background-color: #fff; /* 广告栏背景色 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 广告栏阴影 */
+    padding: 20px; /* 广告栏内边距 */
+    border-radius: 8px; /* 广告栏圆角 */
+}
+
+.advertisement img {
+    width: 70%; /* 广告图片宽度 */
+    height: auto; /* 保持图片高度自动 */
+}
+.advertisement2 {
+    position: fixed;
+    right: 20px;
+    top: 380px;
+    width: 150px; /* 广告栏宽度 */
+    background-color: #fff; /* 广告栏背景色 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 广告栏阴影 */
+    padding: 20px; /* 广告栏内边距 */
+    border-radius: 8px; /* 广告栏圆角 */
+}
+
+.advertisement2 img {
+    width: 70%; /* 广告图片宽度 */
+    height: auto; /* 保持图片高度自动 */
+}
+#advertisement_p {
+    display: block;
+    font-size: 12px;
+    margin-block-start: 1px;
+    margin-block-end: 1ex;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate
+}
+#advertisement_h1 {
+    font-size: 1.3em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em
+}
